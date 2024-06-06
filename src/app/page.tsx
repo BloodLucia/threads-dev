@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <main className=""></main>
+      <main className="h-[3000px]"></main>
       <BottomNav />
     </>
   )
