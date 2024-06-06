@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { LucideProps, icons } from 'lucide-react'
 
-export type IconNamesType = keyof typeof icons
+export type IconNameType = keyof typeof icons
 interface Props extends Omit<LucideProps, 'ref'> {
   name: keyof typeof icons
 }
