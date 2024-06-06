@@ -1,5 +1,5 @@
-import { BottomNav } from '@/components/layouts/BottomNav'
-import { Header } from '@/components/layouts/Header'
+import { Header } from '@/components/layouts/header'
+import { BottomNav } from '@/components/layouts/bottom-nav'
 
 const HomePage = () => {
   return (

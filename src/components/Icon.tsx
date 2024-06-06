@@ -1,4 +1,4 @@
-import { Suspense, lazy } from 'react'
+import { Suspense } from 'react'
 import { LucideProps, icons } from 'lucide-react'
 
 export type IconNamesType = keyof typeof icons
