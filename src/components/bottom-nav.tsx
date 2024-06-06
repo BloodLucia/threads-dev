@@ -1,4 +1,4 @@
-import { BottomNavLink } from '../bottom-nav-link'
+import { BottomNavLink } from './bottom-nav-link'
 
 export const BottomNav: React.FC<{ className?: string }> = () => {
   return (

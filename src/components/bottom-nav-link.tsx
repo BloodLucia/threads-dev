@@ -1,7 +1,7 @@
 'use client'
 import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
-import { Icon, IconNamesType } from './Icon'
+import { Icon, IconNamesType } from './icon'
 
 interface Props {
   to: string
