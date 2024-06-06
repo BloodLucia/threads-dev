@@ -1,12 +1,12 @@
-import { MobileBottomNav } from '@/components/mobile-bottom-nav'
-import { MobileHeader } from '@/components/mobile-header'
+import { BottomNav } from '@/components/layouts/BottomNav'
+import { Header } from '@/components/layouts/Header'
 
 const HomePage = () => {
   return (
     <>
-      <MobileHeader />
+      <Header />
       <main className=""></main>
-      <MobileBottomNav />
+      <BottomNav />
     </>
   )
 }

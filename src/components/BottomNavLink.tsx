@@ -9,7 +9,7 @@ interface Props {
   iconSize?: number
   className?: string
 }
-export const MobileBottomNavItem: React.FC<Props> = ({ to, icon, iconSize = 26, className }) => {
+export const BottomNavLink: React.FC<Props> = ({ to, icon, iconSize = 26, className }) => {
   const pathname = usePathname()
   const isActive = to === pathname
   return (
