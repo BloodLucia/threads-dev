@@ -1,6 +1,9 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import { Button } from './button'
 
 export const Header: React.FC = () => {
+  const router = useRouter()
   return (
     <header className="fixed top-0 left-0 right-0 w-full h-[74px] bg-white/80 backdrop-blur-2xl flex justify-between items-center">
       <div className="flex flex-grow-[1] justify-center">
@@ -17,7 +20,7 @@ export const Header: React.FC = () => {
         </a>
       </div>
 
-      <Button className="absolute right-[19px] top-[19px]">登录</Button>
+      <Button onClick={() => router.push('/sign-in')} className="absolute right-[19px] top-[19px]">登录</Button>
     </header>
   )
 }

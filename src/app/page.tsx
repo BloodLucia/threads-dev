@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <main className="h-[3000px]"></main>
+      <main className='mt-[74px]'>content...</main>
       <BottomNav />
     </>
   )

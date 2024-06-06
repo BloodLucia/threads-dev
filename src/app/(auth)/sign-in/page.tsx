@@ -1,7 +1,9 @@
+import { TopNav } from "@/components/top-nav";
+
 export default function SignInPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="h-[60px] "></header>
+      <TopNav />
       <main className="w-full min-h-[calc(100vh-(60px+70px))] shrink-0 overflow-y-auto flex justify-center items-center">
         <form className="w-full max-w-[370px] px-[24px] flex flex-col items-stretch gap-2">
           <div className="text-center text-2xl font-semibold mb-5">Threads</div>
