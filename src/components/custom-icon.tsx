@@ -3,7 +3,7 @@ import { LucideProps, icons } from 'lucide-react'
 
 export type IconNameType = keyof typeof icons
 interface Props extends Omit<LucideProps, 'ref'> {
-  name: keyof typeof icons
+  name: IconNameType
 }
 export const Icon: React.FC<Props> = (props) => {
   const { name, size = 26, color = 'currentColor' } = props
