@@ -2,6 +2,7 @@
 import clsx from 'clsx'
 import { Icon } from './custom-icon'
 import { useRouter } from 'next/navigation'
+import { IconButton } from './icon-button'
 
 interface Props {
   backIcon?: boolean
@@ -15,7 +16,7 @@ export const TopNav: React.FC<Props> = ({ backIcon, className }) => {
         'w-full h-[60px] py-[12px] box-border flex items-center justify-center',
         className
       )}>
-      <Icon className="absolute left-[19px]" onClick={() => router.back()} name="ArrowLeft" />
+      <IconButton className="absolute left-[19px]" onClick={() => router.back()} icon="ArrowLeft" />
       <a href="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
