@@ -15,7 +15,7 @@ export const InfinitePosts: React.FC<Props> = ({ posts, subscription }) => {
     return (
       <section>
         {posts.map((post) => (
-          <div>{post.content}</div>
+          <div key={post.id}>{post.content}</div>
         ))}
       </section>
     )
