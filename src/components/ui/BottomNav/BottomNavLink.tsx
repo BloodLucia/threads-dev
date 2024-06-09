@@ -1,7 +1,8 @@
 'use client'
 import clsx from 'clsx'
+import cn from 'classnames'
 import { usePathname } from 'next/navigation'
-import { Icon, IconNameType } from './custom-icon'
+import { Icon, IconNameType } from '@/components/custom-icon'
 
 interface Props {
   to: string
@@ -9,7 +10,12 @@ interface Props {
   iconSize?: number
   className?: string
 }
-export const BottomNavLink: React.FC<Props> = ({ to, icon, iconSize = 26, className }) => {
+export const BottomNavLink: React.FC<Props> = ({
+  to,
+  icon,
+  iconSize = 26,
+  className,
+}) => {
   const pathname = usePathname()
   const isActive = to === pathname
   return (
@@ -19,8 +25,12 @@ export const BottomNavLink: React.FC<Props> = ({ to, icon, iconSize = 26, classN
         'flex justify-center items-center',
         isActive ? 'text-black' : 'text-[rgb(184,184,184)]',
         className
-      )}>
-      <Icon name={icon} size={iconSize} />
+      )}
+    >
+      <Icon
+        name={icon}
+        size={iconSize}
+      />
     </a>
   )
 }
