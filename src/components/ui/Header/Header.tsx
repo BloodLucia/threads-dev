@@ -1,5 +1,6 @@
 'use client'
 import cn from 'classnames'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const Header: React.FC<{ className?: string }> = ({ className }) => {
@@ -11,12 +12,24 @@ const Header: React.FC<{ className?: string }> = ({ className }) => {
       )}
     >
       <a
-        className="inline-flex bg-[url(/threads.svg)] indent-[-9999px] w-[32px] h-[32px] bg-center bg-no-repeat"
+        className="inline-flex justify-center items-center w-[32px] h-[32px]"
         href="/"
       >
-        Threads
+        <Image
+          src="/threads.svg"
+          alt="Threads"
+          loading="eager"
+          decoding="async"
+          width={32}
+          height={32}
+        />
       </a>
-      <Link href="/sign-in" className='absolute top-[25%] right-[19px] inline-flex justify-center items-center px-4 py-1.5 bg-black text-white rounded-lg text-base'>登录</Link>
+      <Link
+        href="/sign-in"
+        className="absolute top-[25%] right-[19px] inline-flex justify-center items-center px-4 py-1.5 bg-black text-white rounded-lg text-base"
+      >
+        登录
+      </Link>
     </header>
   )
 }
